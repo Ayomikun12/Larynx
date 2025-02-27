@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media (max-width: 800px) {
+   nav .mainMenu {
+        height: 100vh;
+        width: 80%;
+        position: fixed;
+        top: 0;
+        left: 75px;
+        z-index: 10;
+        flex-direction: column;
+        background-color: #fff;
+        transition: top 1.5s ease;
+        gap: 28px;
+        animation: slideInFromRight 1.5s ease forwards;
+        display: none;
+    }
+    
+    .mainMenu li {
+        list-style: none;
+        margin-left: 2rem;
+    }
+    
+    .mainMenu li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
+    
+   .new-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+   }
+    
+    nav {
+        display: flex; 
+        justify-content: space-between;
+        gap: 10%;
+        background-color: #fff;
+    }
+    
+    .navigation {
+        margin-top: 8rem;
+    }
+    
+    
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid gray;
+        padding: 1rem;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    .subMenu img {
+        width: 10%;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    
+    .newMenu {
+        display: none;
+        opacity: 0;
+        animation: animate 2s ease-in forwards;
+        padding: .7rem;
+    }
+    
+    .newMenu ul {
+        gap: 20px;
+        margin-left: .5rem;        
+        margin-top: .1rem;
+    }
+    
+    .newMenu ul li a {
+        font-size: 20px;
+        opacity: .4;
+    }
+    
+    .navigation .line {
+        margin-left: 4rem;
+        width: 150%;
+        margin-top: .5rem;
+        color: #000;
+    }
+    
+    .home {
+        margin-top: .2rem;
+    }
+    
+    .home li a {
+        opacity: 1;
+        font-weight: 900;
+    }
+    
+    .homes {
+        border: 1px solid gray;
+        padding: 1rem;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    .homie {
+        border: 1px solid gray;
+        padding: 1rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    .homies {
+        border: 1px solid gray;
+        padding: 1rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    .homess {
+        border: 1px solid gray;
+        padding: 1rem;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    .homiees {
+        border: 1px solid gray;
+        padding: 1rem;
+        border-right: none;
+        border-left: none;
+        opacity: .4;
+    }
+    
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        font-size: 4px;
+        margin-top: 1rem;
+        cursor: pointer; 
+        margin-left: 1rem;
+                
+    }
+    
+    .openMenu img {
+        width: 50%;
+        margin-left: 1rem;
+        margin-top: .2rem;
+    }
+    
+    .closeMenu img {
+        width: 45%;
+    }
+    
+    .internet {
+        background-color: #171060;
+        display: grid;
+        color: #fff;
+        padding: 2rem;
+        gap: 5%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .internet-text p {
+        font-size: 12px;
+    }
+    
+    .trust p {
+        font-size: 12px;
+    }
+    
+    .logo {
+        display: flex;
+    }
+    
+    .logo-text {
+        margin-left: 1rem;
+        margin-top: .2rem;
+        color: #171060;
+    }
+    
+    .logo-text2 p {
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .banking {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        margin-left: 2.5rem;
+        margin-top: 1.2rem;
+    }
+    
+    .banking a {
+        text-decoration: none;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        background-color: #171060;
+        color: #fff;
+        padding: .4rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        border-radius: 6px;
+    }
+    
+    .hero {
+        margin-top: 10rem;
+    }
+    
+    .hero-img img {
+        width: 100%;
+    }
+    
+    .hero-text {
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 20px;
+    }
+    
+    .hero-text p {
+        margin-top: 1rem;
+        line-height: 2.2;
+        font-size: 14px;
+    }
+    
+    .org {
+        margin-top: 7rem;
+    }
+    
+    .org-text {
+        border: 1px solid gray;
+        width: 90%;
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 1rem;
+        border-radius: 6px;
+    }
+    
+    .org-text p {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 15px;
+    }
+    
+    .line {
+        margin-top: .7rem;
+        opacity: .4;
+    }
+    
+    footer {
+        background-color: #171060;
+        padding: 1rem;
+        margin-top: 7rem;
+        color: #fff;
+    }
+    
+    .foot-text p {
+        margin-top: 1rem;
+    }
+    
+    .foot-text h2 {
+        margin-top: 1rem;
+    }
+    
+    .foot-text h4 {
+        margin-top: 1rem;
+        font-weight: 250;
+    }
+    
+    .foot-text2 h3{
+        margin-top: 3rem;
+        font-size: 25px;
+    }
+    
+    .comp {
+        margin-top: 1rem;
+    }
+    
+    .foot-text2 a {
+        margin-top: .7rem;
+        text-decoration: none;
+        color: #fff;
+        line-height: 1.9;
+        font-weight: 250;
+    }
+    
+    .foot-text3 {
+        margin-top: 4rem;
+    }
+    
+    .quick {
+        margin-top: 1rem;
+    }
+    
+    .quick a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 2.0;
+        font-weight: 250;
+    }
+    
+    .foot-text4 {
+        margin-top: 4rem;
+    }
+    
+    .foot-text4 h1 {
+        font-size: 23px;
+    }
+    
+    .foot-text4 p {
+        margin-top: 1rem;
+        line-height: 2.0;
+    }
+    
+    .foot-text4 .line {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    
+    .foot-text5 {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 22px;
+        opacity: .5;
+    }
+    
+    .foot-text5 h3 {
+        text-align: center;
+        opacity: .5;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: .7rem;
+    }
+    
+    i {
+        font-weight: 900;
+        opacity: 1;
+    }
+    
+ }
+ 
+ @keyframes animate {
+        to {
+            opacity: 1;
+        }
+    }
+ 
+  @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }

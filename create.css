@@ -1,0 +1,150 @@
+@media (max-width: 800px){
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(130, 106, 251);
+    font-family: "Cabin", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+} 
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}  
+
+.container header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+} 
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+    height: 40px;
+    position: relative; 
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0 15px;
+    color: #707070;
+    margin-top: 8px;
+}  
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.city {
+    margin-top: .4rem;
+}
+
+.form .gender-box {
+    margin-top: 20px;
+}
+
+.gender input {
+    accent-color: rgb(130, 106, 251);
+} 
+
+.gender-box h3 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.gender-option {
+    margin-top: 1rem;
+}
+
+.form  :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+} 
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+} 
+
+.addres :where(.input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    background-color: rgb(130, 106 ,251);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+@keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+     @keyframes animate {
+        to {
+            opacity: 1;
+        }
+    }
+}
